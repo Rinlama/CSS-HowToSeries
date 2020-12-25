@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background: #808e9b;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  margin: 20px;
+  height: 400px;
+  flex-basis: 300px;
+  box-shadow: 0 1rem 3rem #485460;
+  border-radius: 10px;
+  position: relative;
+}
+.box {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1rem 3rem #485460;
+  transition: 0.5s;
+}
+.box .content {
+  color: #ffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.box .content h1,
+p {
+  padding: 5px;
+}
+.box .content a {
+  padding: 7px 18px 7px 18px;
+  margin: 10px;
+  border-radius: 15px;
+  color: #ffff;
+  text-decoration: none;
+}
+.container .card:nth-child(1) a {
+  background-color: #4bcffa;
+}
+.container .card:nth-child(2) a {
+  background-color: #ef5777;
+}
+.container .card:nth-child(3) a {
+  background-color: #4bcffa;
+}
+.box:hover {
+  transform: translateY(-50px);
+}
